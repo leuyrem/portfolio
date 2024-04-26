@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import "reset", "color", "base", "fonts";
+
+.section1 {
+    width: 100%;
+    height: auto;
+    padding: 40px 40px;
+}
+
+header {
+    @include flex-between;
+    margin-bottom: 40px;
+    padding: 0 40px;
+}
+
+.logo {
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.top_text {
+    color: $be;
+    font-weight: 900;
+    font-family: 'NeueHaasDisplayMediu';
+    font-size: 19px;
+}
+
+.menu {
+    button {
+        border-radius: 50px;
+        background-color: $be;
+        color: $wh;
+        @include border ($wh, 3px);
+        font-size: 19px;
+        padding: 8px 15px;
+    }
+}
+
+
+.name {
+    @include flex-mid;
+
+    img {
+        height: 500px;
+    }
+
+    .name1 {
+
+        &:hover {
+            transform: scaleY(0.3);
+            transform-origin: 160.316px 376px;
+        }
+    }
+}
