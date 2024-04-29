@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "NeueHaasDisplay-Mediu";
+  src: url(../fonts/NeueHaasDisplayMediu.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NeueHaasDisplay-Bold";
+  src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SuisseIntl-Medium";
+  src: url(../fonts/SuisseIntl-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "ABCFavorit-Bold";
+  src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
+}
+.section2 {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 0px 0px 50px;
+  font-family: "NeueHaasDisplay-Bold";
+  background-color: lightgreen;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+.section2 span {
+  font-size: 10px;
+  margin-top: -10px;
+  margin-right: 7px;
+}
+
+.type {
+  padding-top: 40px;
+}
+
+.motto {
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.accordion {
+  background-color: brown;
+  width: 250px;
+  height: 100%;
+}
+.accordion .about_me {
+  width: 55px;
+  height: 100%;
+  background-color: #FF2803;
+}
+.accordion .education {
+  width: 55px;
+  height: 100%;
+  background-color: #F9B71B;
+}
+.accordion .technical_skill {
+  width: 55px;
+  height: 100%;
+  background-color: #1795f0;
+}
+.accordion .contact {
+  width: 55px;
+  height: 100%;
+  background-color: #30E462;
+}

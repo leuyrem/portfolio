@@ -1,6 +1,21 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: NeueHaasDisplayMediu;
-    src: url(NeueHaasDisplayMediu.ttf) format("ttf");
+    font-family: 'NeueHaasDisplay-Mediu';
+    src: url(../fonts/NeueHaasDisplayMediu.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NeueHaasDisplay-Bold';
+    src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Medium';
+    src: url(../fonts/SuisseIntl-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'ABCFavorit-Bold';
+    src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
 }

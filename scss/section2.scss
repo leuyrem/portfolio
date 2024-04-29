@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "reset", "color", "base", "fonts";
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    padding: 0px 0px 0px 50px;
+    font-family: 'NeueHaasDisplay-Bold';
+    background-color: lightgreen;
+    @include flex-top;
+
+    span {
+        font-size: 10px;
+        margin-top: -10px;
+        margin-right: 7px;
+    }
+}
+
+.type {
+    padding-top: 40px;
+}
+
+.motto {
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+.accordion {
+    background-color: brown;
+    width: 250px;
+    height: 100%;
+
+    .about_me {
+        width: 55px;
+        height: 100%;
+        background-color: $re;
+    }
+    .education {
+        width: 55px;
+        height: 100%;
+        background-color: $ye;
+    }
+    .technical_skill{
+        width: 55px;
+        height: 100%;
+        background-color: $sk;
+    }
+    .contact{
+        width: 55px;
+        height: 100%;
+        background-color: $gr;
+    }
+}
