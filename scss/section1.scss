@@ -21,14 +21,25 @@ header {
     .menu {
         button {
             border-radius: 50px;
-            background-color: $be;
-            color: $wh;
-            @include border ($wh, 2.5px);
+            background-color: $wh;
+            color: $be;
+            @include border ($be, 2.5px);
             font-size: 19px;
             padding: 8px 15px;
         }
     }
 }
+
+
+footer {
+    width: 100%;
+    height: 70vh;
+    padding: 40px 50px;
+    background-color: $be;
+
+
+}
+
 
 .section1 {
     width: 100%;

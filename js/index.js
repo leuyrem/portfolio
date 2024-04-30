@@ -1,3 +1,4 @@
+//로고
 window.onscroll = function () {
     scrollRotate();
 };
@@ -8,3 +9,12 @@ function scrollRotate() {
     }
 
 window.addEventListener("scroll", scrollRotate);
+
+//프로필
+$('.tit').click(function () {
+    $(this).toggleClass('active')
+    $(this).siblings('.tit').removeClass('active')
+ });
+
+
+

@@ -4,14 +4,32 @@
 .section3 {
     width: 100%;
     height: 100vh;
-    padding: 40px 0px;
-    font-size: 150px;
+    font-size: 140px;
     text-align: center;
     @include col;
     font-family: 'NeueHaasDisplay-Bold';
+    
+    .project {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+
+        span {
+            font-size: 10px;
+            margin-top: -1px;
+            margin-right: 7px;
+        }
+
+        .clickto {
+            margin-left: 775px;
+        }
+    }
 
     span {
-        font-size: 137px;
+        font-size: 125px;
         margin-top: -35px;
         margin-right: -5px;
     }
@@ -49,7 +67,7 @@
 
     .tamburins {
         width: 100%;
-        height: 150px;
+        height: 130px;
         margin: 10px auto;
         perspective: 700px;
         cursor: pointer;
@@ -74,11 +92,11 @@
                 height: 100%;
 
                 &:nth-child(1) {
-                    transform: translateZ(75px);
+                    transform: translateZ(65px);
                 }
 
                 &:nth-child(2) {
-                    transform: translateY(-70px) rotateX(90deg);
+                    transform: translateY(-60px) rotateX(90deg);
                     background-color: $ye;
                 }
             }
@@ -93,7 +111,7 @@
 
     .millie {
         width: 100%;
-        height: 150px;
+        height: 130px;
         margin: 10px auto;
         perspective: 700px;
         cursor: pointer;
@@ -118,11 +136,11 @@
                 height: 100%;
 
                 &:nth-child(1) {
-                    transform: translateZ(75px);
+                    transform: translateZ(65px);
                 }
 
                 &:nth-child(2) {
-                    transform: translateY(-70px) rotateX(90deg);
+                    transform: translateY(-60px) rotateX(90deg);
                     background-color: $gr;
                 }
             }
@@ -137,7 +155,7 @@
 
     .water {
         width: 100%;
-        height: 150px;
+        height: 130px;
         margin: 10px auto;
         perspective: 700px;
         cursor: pointer;
@@ -161,13 +179,12 @@
                 width: 100%;
                 height: 100%;
 
-
                 &:nth-child(1) {
-                    transform: translateZ(75px);
+                    transform: translateZ(65px);
                 }
 
                 &:nth-child(2) {
-                    transform: translateY(-70px) rotateX(90deg);
+                    transform: translateY(-60px) rotateX(90deg);
                     background-color: $sk;
                 }
             }
@@ -182,7 +199,7 @@
 
     .museum {
         width: 100%;
-        height: 150px;
+        height: 130px;
         margin: 10px auto;
         perspective: 700px;
         cursor: pointer;
@@ -206,13 +223,12 @@
                 width: 100%;
                 height: 100%;
 
-
                 &:nth-child(1) {
-                    transform: translateZ(75px);
+                    transform: translateZ(65px);
                 }
 
                 &:nth-child(2) {
-                    transform: translateY(-70px) rotateX(90deg);
+                    transform: translateY(-60px) rotateX(90deg);
                     background-color: $gr;
                 }
             }
@@ -227,7 +243,7 @@
 
     .jackon {
         width: 100%;
-        height: 150px;
+        height: 130px;
         margin: 10px auto;
         perspective: 700px;
         cursor: pointer;
@@ -251,13 +267,12 @@
                 width: 100%;
                 height: 100%;
 
-
                 &:nth-child(1) {
-                    transform: translateZ(75px);
+                    transform: translateZ(65px);
                 }
 
                 &:nth-child(2) {
-                    transform: translateY(-70px) rotateX(90deg);
+                    transform: translateY(-60px) rotateX(90deg);
                     background-color: $re;
                 }
             }
@@ -269,11 +284,4 @@
             }
         }
     }
-}
-
-footer {
-    width: 100%;
-    height: 100vh;
-    padding: 40px 50px;
-    background-color: $ba;
 }

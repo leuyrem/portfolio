@@ -38,51 +38,260 @@ button {
 }
 .section2 {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   padding: 0px 0px 0px 50px;
   font-family: "NeueHaasDisplay-Bold";
-  background-color: lightgreen;
+  background-color: #f4f5ef;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   justify-content: space-between;
 }
-.section2 span {
+.section2 .round_tit {
   font-size: 10px;
-  margin-top: -10px;
   margin-right: 7px;
+  margin-top: 2px;
 }
 
-.type {
+.topWrap {
+  display: flex;
+}
+.topWrap .profile {
   padding-top: 40px;
+  display: flex;
+  width: 100px;
 }
-
-.motto {
+.topWrap .motto {
   font-size: 40px;
   padding-top: 40px;
+  margin-left: 360px;
+  width: 600px;
 }
 
 .accordion {
-  background-color: brown;
-  width: 250px;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.accordion .tit {
+  width: 60px;
+  height: 100%;
+  padding: 10px 10px;
+  transition: linear 0.5s;
+  cursor: pointer;
+}
+.accordion .tit.active {
+  width: 550px;
+}
+.accordion .inner {
+  display: none;
+}
+.accordion .list_box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.accordion .list_box p {
+  transform: rotate(-90deg);
+  width: 180px;
+  font-size: 24px;
+  margin-bottom: 76px;
 }
 .accordion .about_me {
-  width: 55px;
-  height: 100%;
   background-color: #FF2803;
 }
+.accordion .about_me span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 0;
+  padding-top: 4px;
+}
+.accordion .about_me span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -70%;
+  width: 34px;
+  height: 34px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
+}
+.accordion .about_me.active {
+  position: relative;
+}
+.accordion .about_me.active .list_box p {
+  display: none;
+}
+.accordion .about_me.active .list_box span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 46.5%;
+  color: #fff;
+  z-index: 0;
+  padding-top: 4px;
+}
+.accordion .about_me.active .list_box span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
+}
 .accordion .education {
-  width: 55px;
-  height: 100%;
   background-color: #F9B71B;
 }
+.accordion .education span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 0;
+  padding-top: 5px;
+}
+.accordion .education span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -85%;
+  width: 34px;
+  height: 34px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
+}
+.accordion .education.active {
+  position: relative;
+}
+.accordion .education.active .list_box p {
+  display: none;
+}
+.accordion .education.active .list_box span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 46.5%;
+  color: #fff;
+  z-index: 0;
+  padding-top: 4px;
+}
+.accordion .education.active .list_box span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
+}
 .accordion .technical_skill {
-  width: 55px;
-  height: 100%;
   background-color: #1795f0;
 }
+.accordion .technical_skill span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 0;
+  padding-top: 5px;
+}
+.accordion .technical_skill span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -85%;
+  width: 34px;
+  height: 34px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
+}
+.accordion .technical_skill.active {
+  position: relative;
+}
+.accordion .technical_skill.active .list_box p {
+  display: none;
+}
+.accordion .technical_skill.active .list_box span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 46.5%;
+  color: #fff;
+  z-index: 0;
+  padding-top: 4px;
+}
+.accordion .technical_skill.active .list_box span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
+}
 .accordion .contact {
-  width: 55px;
-  height: 100%;
   background-color: #30E462;
+}
+.accordion .contact span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 0;
+  padding-top: 5px;
+}
+.accordion .contact span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -70%;
+  width: 34px;
+  height: 34px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
+}
+.accordion .contact.active {
+  position: relative;
+}
+.accordion .contact.active .list_box p {
+  display: none;
+}
+.accordion .contact.active .list_box span {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 46.5%;
+  color: #fff;
+  z-index: 0;
+  padding-top: 4px;
+}
+.accordion .contact.active .list_box span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  z-index: -99;
+  border-radius: 100%;
 }
