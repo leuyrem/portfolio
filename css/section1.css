@@ -67,6 +67,10 @@ footer {
   padding: 40px 50px;
   background-color: #0500e8;
 }
+footer h1 {
+  color: #fff;
+  text-align: center;
+}
 
 .section1 {
   width: 100%;
@@ -89,6 +93,9 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0 40px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
 }
 .section1 .urim .name_U svg {
   transition: 0.5s linear;
@@ -111,6 +118,9 @@ footer {
 .section1 .urim .name_I svg:hover {
   transform: scaleY(0.3);
 }
+.section1 .urim .name_M {
+  transition-delay: 0.4s;
+}
 .section1 .urim .name_M svg {
   transition: 0.5s linear;
   transform-origin: 0 100%;
@@ -127,6 +137,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin-top: 100px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
 }
 .section1 .bottom_txt p:nth-child(2) {
   text-align: right;

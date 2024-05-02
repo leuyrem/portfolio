@@ -72,6 +72,14 @@
         perspective: 700px;
         cursor: pointer;
 
+        // img {
+        //     display: none;
+        // }
+
+        // &:hover+.tamburins_main {
+        //     display: block;
+        // } 
+
         .list_1 {
             position: absolute;
             top: 0;
@@ -104,6 +112,12 @@
             .list_1 {
                 transform: rotateX(-90deg);
             }
+
+            
+            // background-image: url(../img/tambutins_main.PNG);
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
         }
     }
 

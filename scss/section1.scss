@@ -37,9 +37,11 @@ footer {
     padding: 40px 50px;
     background-color: $be;
 
-
+    h1 {
+        color: $wh;
+        text-align: center;
+    }
 }
-
 
 .section1 {
     width: 100%;
@@ -58,11 +60,24 @@ footer {
         letter-spacing: 1px
     }
 
+    // .logo-text {
+    //     opacity: 0;
+    //     transform: translateY(100px);
+    //     transition: opacity 1s, transform 1s;
+    //     position: relative;
+    // }
+
     .urim {
         @include flex-mid;
         padding: 0 40px;
 
-        .name_U {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 1s, transform 1s;
+     
+
+        .name_U { 
+
             svg {
                 transition: 0.5s linear;
                 transform-origin: 0 100%;
@@ -73,7 +88,8 @@ footer {
             }
         }
 
-        .name_R {
+        .name_R {  
+
             svg {
                 transition: 0.5s linear;
                 transform-origin: 0 100%;
@@ -85,6 +101,7 @@ footer {
         }
 
         .name_I {
+
             svg {
                 transition: 0.5s linear;
                 transform-origin: 0 100%;
@@ -96,6 +113,9 @@ footer {
         }
 
         .name_M {
+
+            transition-delay: 0.4s; 
+
             svg {
                 transition: 0.5s linear;
                 transform-origin: 0 100%;
@@ -114,6 +134,10 @@ footer {
         font-size: 28px;
         @include flex-between;
         margin-top: 100px;
+
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 1s, transform 1s;
 
         p {
             &:nth-child(2) {
