@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEEYURIM protfolio</title>
+    <title>LEEYURIM portfolio</title>
 
     <link rel="shortcut icon" href="img/favi.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/section1.css">
     <link rel="stylesheet" href="css/section2.css">
     <link rel="stylesheet" href="css/section3.css">
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPGQ13K5F8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPGQ13K5F8');
+    </script>
 </head>
 
 <body>
     <header>
-        <div class="logo"><img src="img/logo.png" id="rotate" alt="logo"></div>
+        <div class="logo"><a href="#"><img src="img/logo.png" id="rotate" alt="logo"></a></div>
         <div class="menu"><button>Click to Githerb</button></div>
     </header>
 
@@ -86,30 +97,59 @@
     <!-- 프로필 -->
     <div class="section2">
         <div class="topWrap">
-        <div class="profile"><span class="round_tit">●</span>
-            <p>Profile</p>
-        </div>
-        <div class="motto">Music, sound and voice. Secretly <br> designed to unlock a little love.</div>            
+            <div class="profile"><span class="round_tit">●</span>
+                <p>Profile</p>
+            </div>
+            <div class="motto">Music, sound and voice. Secretly <br> designed to unlock a little love.</div>
         </div>
 
 
         <div class="accordion">
-
-            
             <div class="about_me tit">
                 <div class="list_box">
                     <span>A</span>
                     <p>About me</p>
                 </div>
-               <div class="inner about">
-                <ul>
-                    <li>이름</li>
-                    <li>나이</li>
-                    <li>자격증</li>
-                </ul>
-               </div>
+
+                <div class="innerWrap about">
+                    <div class="inner_animate">
+                        <div class="inner_track">
+                            <div class="inner_content">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>About me</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>About me</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>About me</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>About me</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>About me</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>About me</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profileList">
+                        <ul>
+                            <li>NAME</li>
+                            <li style="font-family: 'Noto Sans KR', sans-serif;">이유림</li>
+                        </ul>
+                        <ul>
+                            <li>BIRTH</li>
+                            <li>1998/07/18</li>
+                        </ul>
+                        <ul>
+                            <li>CERTIFICATE</li>
+                            <li style="font-family: 'Noto Sans KR', sans-serif;">포토샵</li>
+                        </ul>
+                        <ul style="font-family: 'Noto Sans KR', sans-serif;">
+                            운전면허
+                        </ul>
+                        <ul style="font-family: 'Noto Sans KR', sans-serif;">
+                            웹디자인기능사
+                        </ul>
+                        <ul style="font-family: 'Noto Sans KR', sans-serif;">
+                            GTQ1급
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
 
 
 
@@ -118,27 +158,140 @@
                     <span>E</span>
                     <p>Education</p>
                 </div>
-                <div class="inner"></div>
+
+                <div class="innerWrap">
+                    <div class="inner_animate">
+                        <div class="inner_track">
+                            <div class="inner_content">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Education</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Education</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Education</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Education</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Education</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Education</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profileList">
+                        <ul>
+                            <li style="font-family: 'Noto Sans KR', sans-serif;">한국관광대 관광영어과 입학</li>
+                            <li>2017</li>
+                        </ul>
+                        <ul>
+                            <li style="font-family: 'Noto Sans KR', sans-serif;">한국관광대 관광영어과 졸업</li>
+                            <li>2019</li>
+                        </ul>
+                        <ul>
+                            <li style="font-family: 'Noto Sans KR', sans-serif;">평택대 광고홍보학과 편입</li>
+                            <li>2019</li>
+                        </ul>
+                        <ul>
+                            <li style="font-family: 'Noto Sans KR', sans-serif;">평택대 광고홍보학과 졸업</li>
+                            <li>2022</li>
+                        </ul>
+                        <ul>
+                            <li style="font-family: 'Noto Sans KR', sans-serif;">웹 콘텐츠 UI/UX 디자인과 프로트앤드 개발 과정 수료</li>
+                            <li>2024</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
+
+
 
             <div class="technical_skill tit">
                 <div class="list_box">
                     <span>T</span>
                     <p>Technical Skill</p>
                 </div>
-                <div class="inner"></div>
+
+                <div class="innerWrap">
+                    <div class="inner_animate">
+                        <div class="inner_track">
+                            <div class="inner_content">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Technical Skill</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Technical Skill</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Technical Skill</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Technical Skill</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Technical Skill</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Technical Skill</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profileList">
+                        <ul>
+                            <li>PHOTOSHOP</li>
+                        </ul>
+                        <ul>
+                            <li>ILLUSTRATOR</li>
+                        </ul>
+                        <ul>
+                            <li>FIGMA</li>
+                        </ul>
+                        <ul>
+                            <li>HTML</li>
+                        </ul>
+                        <ul>
+                            <li>CSS</li>
+                        </ul>
+
+                        <ul>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+
+                        <ul>
+                            <li>JQUERY</li>
+                        </ul>
+
+                        <ul>
+                            <li>SCSS</li>
+                        </ul>
+
+                        <ul>
+                            <li>REACT</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
+
+
 
             <div class="contact tit">
                 <div class="list_box">
                     <span>C</span>
                     <p>Contact</p>
                 </div>
-                <div class="inner"></div>
+
+                <div class="innerWrap">
+                    <div class="inner_animate">
+                        <div class="inner_track">
+                            <div class="inner_content">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Contact</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Contact</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Contact</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Contact</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Contact</p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<p>Contact</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profileList">
+                        <ul>
+                            <li>PHONE NUMBER</li>
+                            <li>010-5792-3804</li>
+                        </ul>
+                        <ul>
+                            <li>E-MAIL</li>
+                            <li>leuyren@gmail.com</li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -148,7 +301,7 @@
             <p>Project</p>
             <p class="clickto">Click To My Project</p>
         </div>
-        <div class="tamburins">      
+        <div class="tamburins">
             <div class="list_1">
 
                 <div style="background-color: #fff;">

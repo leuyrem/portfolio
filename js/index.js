@@ -12,9 +12,8 @@ window.addEventListener("scroll", scrollRotate);
 
 //프로필
 $('.tit').click(function () {
-    $(this).toggleClass('active')
+    $(this).toggleClass('active')  
     $(this).siblings('.tit').removeClass('active')
  });
-
 
 

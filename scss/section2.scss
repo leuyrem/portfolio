@@ -45,14 +45,15 @@
         padding: 10px 10px;
         transition: linear 0.5s;
         cursor: pointer;
+        position: relative;
 
         &.active {
             width: 550px;
-        }
-    }
 
-    .inner {
-        display: none;
+            .innerWrap {
+                display: block;
+            }
+        }
     }
 
     .list_box {
@@ -66,6 +67,65 @@
             font-size: 24px;
             margin-bottom: 76px;
         }
+    }
+
+    .innerWrap {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        height: 100%;
+
+
+        .inner_animate {
+            position: relative;
+            top: 45px;
+            width: 550px;
+            height: auto;
+            white-space: nowrap;
+            font-size: 88px;
+        }
+
+         .inner_content {
+            @include flex-mid;
+        }   
+
+        .inner_track {
+            position: absolute;
+            white-space: nowrap;
+            will-change: transform;
+            animation: loop 20s linear infinite;
+    
+            &:active {
+                animation-play-state: paused;
+            }
+        }
+
+        @keyframes loop {
+            from {
+                transform: translateX(0);
+            }
+    
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .profileList {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 20px;
+
+            ul {
+                @include flex-between;
+                border-top: 1px solid $ba;
+                padding: 2px 0;
+            }
+        }
+    
     }
 
     .about_me {
@@ -94,8 +154,6 @@
         }
 
         &.active {
-            position: relative;
-
             .list_box {
                 p {
                    display: none;  
@@ -119,6 +177,22 @@
                         background-color: $ba;
                         z-index: -99;
                         border-radius: 100%;
+                    }
+                }
+            }
+            .profileList {
+                font-weight: 800;
+                ul {
+                    &:nth-of-type(4) {
+                        justify-content: flex-end;
+                    }
+                    &:nth-of-type(5) {
+                        justify-content: flex-end;
+                    }
+                    &:nth-of-type(6) {
+                        border-bottom: 1px solid $ba;
+                        margin-bottom: 20px;
+                        justify-content: flex-end;
                     }
                 }
             }
@@ -152,12 +226,11 @@
         }
 
         &.active {
-            position: relative;
-
             .list_box {
                 p {
                    display: none;  
                 }
+
                 span {
                     font-size: 20px;
                     position: relative;
@@ -177,6 +250,15 @@
                         background-color: $ba;
                         z-index: -99;
                         border-radius: 100%;
+                    }
+                }
+            }
+            .profileList {
+                font-weight: 800;
+                ul {                    
+                    &:nth-of-type(5) {
+                        border-bottom: 1px solid $ba;
+                        margin-bottom: 20px;
                     }
                 }
             }
@@ -209,8 +291,6 @@
         }
 
         &.active {
-            position: relative;
-
             .list_box {
                 p {
                    display: none;  
@@ -234,6 +314,15 @@
                         background-color: $ba;
                         z-index: -99;
                         border-radius: 100%;
+                    }
+                }
+            }
+            .profileList {
+                font-weight: 800;
+                ul {                    
+                    &:nth-of-type(9) {
+                        border-bottom: 1px solid $ba;
+                        margin-bottom: 20px;
                     }
                 }
             }
@@ -266,8 +355,6 @@
         }
 
         &.active {
-            position: relative;
-
             .list_box {
                 p {
                    display: none;  
@@ -291,6 +378,15 @@
                         background-color: $ba;
                         z-index: -99;
                         border-radius: 100%;
+                    }
+                }
+            }
+            
+            .profileList {
+                ul {                    
+                    &:nth-of-type(2) {
+                        border-bottom: 1px solid $ba;
+                        margin-bottom: 20px;
                     }
                 }
             }
