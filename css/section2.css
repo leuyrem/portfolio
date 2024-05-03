@@ -30,10 +30,6 @@ button {
   src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SuisseIntl-Medium";
-  src: url(../fonts/SuisseIntl-Medium.ttf) format("truetype");
-}
-@font-face {
   font-family: "ABCFavorit-Bold";
   src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
 }
@@ -50,7 +46,7 @@ button {
 .section2 .round_tit {
   font-size: 10px;
   margin-right: 7px;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .topWrap {
@@ -64,8 +60,11 @@ button {
 .topWrap .motto {
   font-size: 40px;
   padding-top: 40px;
-  margin-left: 400px;
+  margin-left: 420px;
   width: 600px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s ease-in-out;
 }
 
 .accordion {
@@ -106,16 +105,16 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
   height: 100%;
 }
 .accordion .innerWrap .inner_animate {
   position: relative;
   top: 45px;
   width: 550px;
-  height: auto;
+  height: 105px;
   white-space: nowrap;
   font-size: 88px;
+  overflow: hidden;
 }
 .accordion .innerWrap .inner_content {
   display: flex;
@@ -315,9 +314,59 @@ button {
 .accordion .technical_skill.active .profileList {
   font-weight: 800;
 }
-.accordion .technical_skill.active .profileList ul:nth-of-type(9) {
+.accordion .technical_skill.active .profileList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.accordion .technical_skill.active .profileList li img {
+  width: 50px;
+}
+.accordion .technical_skill.active .profileList ul:nth-of-type(12) {
   border-bottom: 1px solid #000;
   margin-bottom: 20px;
+}
+.accordion .technical_skill.active .profileList .container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.accordion .technical_skill.active .profileList .tooltip {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  background: #000;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  display: none;
+  z-index: 999;
+  width: 70%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  overflow: visible;
+  z-index: 999;
+}
+.accordion .technical_skill.active .profileList .tooltip span {
+  color: #F9B71B;
+}
+.accordion .technical_skill.active .profileList .tooltip:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 15px;
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #000;
+}
+.accordion .technical_skill.active .profileList .container:hover .tooltip {
+  display: block;
 }
 .accordion .contact {
   background-color: #30E462;

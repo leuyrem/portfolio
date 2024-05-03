@@ -10,42 +10,66 @@ function scrollRotate() {
 
 window.addEventListener("scroll", scrollRotate);
 
-//애니메이션
-// window.addEventListener('scroll', function(){
-//     console.log(window.scrollY)
-// });
-
-// $(window).scroll(function (){
-// var ws = $(this).scrollTop();
-
-// var logo = $('.name_U').offset().top;
-// if (ws > logo - 2) {
-//     $('.name_U').css("transform", "translateY(0px)").css("opacity", "1");
-// }    
-// })
 
 //메인페이지 애니메이션
 document.addEventListener('DOMContentLoaded', () => {
 
-    const urim = document.querySelector('.urim');
+    const name_U = document.querySelector('.name_U');
     setTimeout(() => {
-      urim.style.opacity = '1';
-      urim.style.transform = 'translateY(0)';
+      name_U.style.opacity = '1';
+      name_U.style.transform = 'translateY(0)';
+      create_main_ani(name_U);
+    }, 100);
 
-      create_main_ani(urim);
-    }, 500);
+    const name_R = document.querySelector('.name_R');
+    setTimeout(() => {
+      name_R.style.opacity = '1';
+      name_R.style.transform = 'translateY(0)';
+      create_main_ani(name_R);
+    }, 200);
+
+    const name_I = document.querySelector('.name_I');
+    setTimeout(() => {
+      name_I.style.opacity = '1';
+      name_I.style.transform = 'translateY(0)';
+      create_main_ani(name_I);
+    }, 300);
+
+    const name_M = document.querySelector('.name_M');
+    setTimeout(() => {
+      name_M.style.opacity = '1';
+      name_M.style.transform = 'translateY(0)';
+      create_main_ani(name_M);
+    }, 300);
+
+    const t_txt = document.querySelector('.top_text');
+    setTimeout(() => {
+      t_txt.style.opacity = '1';
+      t_txt.style.transform = 'translateY(0)';
+      create_bottom_text(t_txt);
+    }, 400);
 
     const b_txt = document.querySelector('.bottom_txt');
     setTimeout(() => {
       b_txt.style.opacity = '1';
       b_txt.style.transform = 'translateY(0)';
-
       create_bottom_text(b_txt);
-    }, 700);
+    }, 500);
   
   });
 
+//애니메이션
+window.addEventListener('scroll', function(){
+    console.log(window.scrollY)
+});
 
+$(window).scroll(function (){
+var ws = $(this).scrollTop();
+var motto = $('.motto').offset().top;
+if (ws > 350) {
+    $('.motto').css("transform", "translateY(0px)").css("opacity", "1");
+}
+});
 
 //프로필
 $('.tit').click(function () {

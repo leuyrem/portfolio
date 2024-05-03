@@ -30,13 +30,22 @@ button {
   src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SuisseIntl-Medium";
-  src: url(../fonts/SuisseIntl-Medium.ttf) format("truetype");
-}
-@font-face {
   font-family: "ABCFavorit-Bold";
   src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
 }
+body::-webkit-scrollbar {
+  width: 18px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #cef79e;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -66,10 +75,73 @@ footer {
   height: 70vh;
   padding: 40px 50px;
   background-color: #0500e8;
+  position: relative;
+  overflow: hidden;
 }
-footer h1 {
+footer .contact {
+  position: absolute;
+  top: 40px;
+  right: 130px;
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+}
+footer .contact div:nth-of-type(1) {
+  margin-top: 10px;
+}
+footer .contact span {
   color: #fff;
+  font-family: "ABCFavorit-Bold";
+  font-size: 20px;
+}
+footer .contact h1 {
+  color: #fff;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+footer .foot {
+  color: #fff;
+  font-size: 400px;
+  font-family: "ABCFavorit-Bold";
   text-align: center;
+  height: 400px;
+  margin-top: 150px;
+  position: relative;
+}
+footer .foot p {
+  letter-spacing: -20px;
+}
+footer .foot::before {
+  content: "for";
+  position: absolute;
+  top: 200px;
+  left: 480px;
+  background-color: #0500e8;
+  width: 120px;
+  height: 45px;
+  border-radius: 50px;
+  font-size: 33px;
+  display: inline;
+  align-content: center;
+  justify-content: center;
+  border: #fff solid 2.5px;
+  color: #fff;
+}
+footer .foot::after {
+  content: "visiting!";
+  position: absolute;
+  bottom: 30px;
+  right: 580px;
+  background-color: #0500e8;
+  width: 190px;
+  height: 45px;
+  border-radius: 50px;
+  font-size: 33px;
+  display: inline;
+  align-content: center;
+  justify-content: center;
+  border: #fff solid 2.5px;
+  color: #fff;
 }
 
 .section1 {
@@ -87,12 +159,18 @@ footer h1 {
   font-family: "NeueHaasDisplay-Mediu";
   font-size: 30px;
   letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s, transform 1s;
 }
 .section1 .urim {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 40px;
+  margin-top: 30px;
+}
+.section1 .urim .name_U {
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 1s, transform 1s;
@@ -104,12 +182,22 @@ footer h1 {
 .section1 .urim .name_U svg:hover {
   transform: scaleY(0.3);
 }
+.section1 .urim .name_R {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
+}
 .section1 .urim .name_R svg {
   transition: 0.5s linear;
   transform-origin: 0 100%;
 }
 .section1 .urim .name_R svg:hover {
   transform: scaleY(0.3);
+}
+.section1 .urim .name_I {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
 }
 .section1 .urim .name_I svg {
   transition: 0.5s linear;
@@ -119,7 +207,9 @@ footer h1 {
   transform: scaleY(0.3);
 }
 .section1 .urim .name_M {
-  transition-delay: 0.4s;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
 }
 .section1 .urim .name_M svg {
   transition: 0.5s linear;

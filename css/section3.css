@@ -30,10 +30,6 @@ button {
   src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "SuisseIntl-Medium";
-  src: url(../fonts/SuisseIntl-Medium.ttf) format("truetype");
-}
-@font-face {
   font-family: "ABCFavorit-Bold";
   src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
 }
@@ -46,22 +42,23 @@ button {
   flex-direction: column;
   justify-content: center;
   font-family: "NeueHaasDisplay-Bold";
+  overflow-x: hidden;
 }
 .section3 .project {
   font-size: 16px;
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  justify-content: space-between;
+  padding: 0 50px;
   margin-bottom: 40px;
   margin-top: 10px;
 }
 .section3 .project span {
   font-size: 10px;
-  margin-top: -1px;
   margin-right: 7px;
 }
 .section3 .project .clickto {
-  margin-left: 775px;
+  font-family: "NeueHaasDisplay-Mediu";
 }
 .section3 span {
   font-size: 125px;

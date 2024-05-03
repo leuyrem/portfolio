@@ -8,23 +8,24 @@
     text-align: center;
     @include col;
     font-family: 'NeueHaasDisplay-Bold';
+    overflow-x: hidden;
     
     .project {
         font-size: 16px;
         display: flex;
         align-items: center;
-        margin-left: 50px;
+        justify-content: space-between;
+        padding: 0 50px;
         margin-bottom: 40px;
         margin-top: 10px;
 
         span {
             font-size: 10px;
-            margin-top: -1px;
             margin-right: 7px;
         }
 
         .clickto {
-            margin-left: 775px;
+            font-family: 'NeueHaasDisplay-Mediu';
         }
     }
 
@@ -71,14 +72,6 @@
         margin: 10px auto;
         perspective: 700px;
         cursor: pointer;
-
-        // img {
-        //     display: none;
-        // }
-
-        // &:hover+.tamburins_main {
-        //     display: block;
-        // } 
 
         .list_1 {
             position: absolute;
