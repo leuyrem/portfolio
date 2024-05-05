@@ -33,19 +33,10 @@ button {
   font-family: "ABCFavorit-Bold";
   src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
 }
-body::-webkit-scrollbar {
-  width: 18px;
+@font-face {
+  font-family: "ABCFavorit";
+  src: url(../fonts/ABCFavorit.otf) format("opentype");
 }
-body::-webkit-scrollbar-thumb {
-  background-color: #cef79e;
-  border-radius: 10px;
-  background-clip: padding-box;
-  border: 2px solid transparent;
-}
-body::-webkit-scrollbar-track {
-  background-color: #000;
-}
-
 header {
   width: 100%;
   display: flex;
@@ -68,6 +59,7 @@ header .menu button {
   border: #0500e8 solid 2.5px;
   font-size: 19px;
   padding: 8px 15px;
+  font-family: "NeueHaasDisplay-Mediu";
 }
 
 footer {
@@ -81,18 +73,18 @@ footer {
 footer .contact {
   position: absolute;
   top: 40px;
-  right: 130px;
+  left: 130px;
   display: flex;
   justify-content: space-between;
-  width: 470px;
+  width: 450px;
 }
 footer .contact div:nth-of-type(1) {
   margin-top: 10px;
 }
 footer .contact span {
   color: #fff;
-  font-family: "ABCFavorit-Bold";
   font-size: 20px;
+  font-family: "NeueHaasDisplay-Mediu";
 }
 footer .contact h1 {
   color: #fff;

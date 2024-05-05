@@ -18,11 +18,25 @@
 
 .topWrap {
     display: flex;
+    position: relative;
 
     .profile {
         padding-top: 40px;
         display: flex;
         width: 100px;
+        position: relative;
+
+        &::after {
+            content: 'Click to Profile';
+            position: absolute;
+            top: 780px;
+            left: 520px;
+            width: 110px;
+            @include border(1px, $ba);
+            border-radius: 4px;
+            text-align: center;
+            padding: 2px 6px;
+        }
     }
 
     .motto {
@@ -30,7 +44,6 @@
         padding-top: 40px;
         margin-left: 420px;
         width: 600px;
-
         transform: translateY(150px);
         opacity: 0;
         transition: 1s ease-in-out;

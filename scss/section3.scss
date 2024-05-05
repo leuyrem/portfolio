@@ -26,6 +26,10 @@
 
         .clickto {
             font-family: 'NeueHaasDisplay-Mediu';
+            @include border(1px, $ba);
+            border-radius: 4px;
+            text-align: center;
+            padding: 2px 6px;
         }
     }
 

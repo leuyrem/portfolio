@@ -33,6 +33,10 @@ button {
   font-family: "ABCFavorit-Bold";
   src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
 }
+@font-face {
+  font-family: "ABCFavorit";
+  src: url(../fonts/ABCFavorit.otf) format("opentype");
+}
 .section3 {
   width: 100%;
   height: 100vh;
@@ -59,6 +63,10 @@ button {
 }
 .section3 .project .clickto {
   font-family: "NeueHaasDisplay-Mediu";
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-align: center;
+  padding: 2px 6px;
 }
 .section3 span {
   font-size: 125px;

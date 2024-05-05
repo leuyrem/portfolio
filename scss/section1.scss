@@ -1,23 +1,6 @@
 @charset "utf-8";
 @import "reset", "color", "base", "fonts";
 
-body {
-    &::-webkit-scrollbar {
-        width: 18px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: #cef79e;
-        border-radius: 10px;
-        background-clip: padding-box;
-        border: 2px solid transparent;
-    }
-
-    &::-webkit-scrollbar-track {
-        background-color: $ba;
-    }
-}
-
 
 header {
     width: 100%;
@@ -43,6 +26,7 @@ header {
             @include border ($be, 2.5px);
             font-size: 19px;
             padding: 8px 15px;
+            font-family: 'NeueHaasDisplay-Mediu';
         }
     }
 }
@@ -59,11 +43,10 @@ footer {
     .contact {
         position: absolute;
         top: 40px;
-        right: 130px;
+        left: 130px;
         display: flex;
         justify-content: space-between;
-        width: 470px;
-
+        width: 450px;
 
         div {
             &:nth-of-type(1) {
@@ -73,8 +56,8 @@ footer {
 
         span {
             color: $wh;
-            font-family: 'ABCFavorit-Bold';
             font-size: 20px;
+            font-family: 'NeueHaasDisplay-Mediu';
         }
 
         h1 {
@@ -228,7 +211,6 @@ footer {
         font-size: 28px;
         @include flex-between;
         margin-top: 100px;
-
         opacity: 0;
         transform: translateY(100px);
         transition: opacity 1s, transform 1s;

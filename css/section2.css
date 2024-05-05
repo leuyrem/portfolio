@@ -33,6 +33,10 @@ button {
   font-family: "ABCFavorit-Bold";
   src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
 }
+@font-face {
+  font-family: "ABCFavorit";
+  src: url(../fonts/ABCFavorit.otf) format("opentype");
+}
 .section2 {
   width: 100%;
   height: 85vh;
@@ -51,11 +55,24 @@ button {
 
 .topWrap {
   display: flex;
+  position: relative;
 }
 .topWrap .profile {
   padding-top: 40px;
   display: flex;
   width: 100px;
+  position: relative;
+}
+.topWrap .profile::after {
+  content: "Click to Profile";
+  position: absolute;
+  top: 780px;
+  left: 520px;
+  width: 110px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-align: center;
+  padding: 2px 6px;
 }
 .topWrap .motto {
   font-size: 40px;
