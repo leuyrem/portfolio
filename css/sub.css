@@ -119,14 +119,24 @@ button {
 }
 .content .main_scroll {
   width: 100%;
-  height: 900px;
+  height: 750px;
   border-radius: 20px;
-  background-color: palegoldenrod;
   margin-bottom: 80px;
-  background-image: url(../img/tambutins_main.PNG);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: 5s;
+}
+.content .main_scroll img {
+  position: absolute;
+  width: 100%;
+  transition: 20s;
+}
+.content .main_scroll img:hover {
+  transform: translateY(-85%);
+}
+.content .main_scroll video {
+  position: absolute;
+  width: 102%;
 }
 .content .txt_group {
   display: flex;
@@ -161,9 +171,22 @@ button {
 .content .key p {
   padding-top: 20px;
 }
-.content .sub_mockup {
-  width: 100%;
-  height: 900px;
+.content .subWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .subWrap .sub_scroll {
+  width: 48%;
+  height: 750px;
+  border-radius: 20px;
+  background-color: darkcyan;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+.content .subWrap .sub_mockup {
+  width: 48%;
+  height: 750px;
   border-radius: 20px;
   background-color: darkcyan;
   margin-top: 80px;

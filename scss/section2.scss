@@ -29,7 +29,7 @@
         &::after {
             content: 'Click to Profile';
             position: absolute;
-            top: 780px;
+            top: 700px;
             left: 520px;
             width: 110px;
             @include border(1px, $ba);
@@ -206,10 +206,6 @@
                     }
 
                     &:nth-of-type(5) {
-                        justify-content: flex-end;
-                    }
-
-                    &:nth-of-type(6) {
                         border-bottom: 1px solid $ba;
                         margin-bottom: 20px;
                         justify-content: flex-end;

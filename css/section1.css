@@ -224,5 +224,13 @@ footer .foot::after {
   transition: opacity 1s, transform 1s;
 }
 .section1 .bottom_txt p:nth-child(2) {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 350px;
+}
+.section1 .bottom_txt p:nth-child(2) span {
+  font-weight: 900;
+}
+.section1 .bottom_txt p:nth-child(3) {
   text-align: right;
 }

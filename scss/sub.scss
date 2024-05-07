@@ -29,7 +29,6 @@
     }
 
     .box2 {
-
         .title {
             font-size: 120px;
         }
@@ -73,9 +72,6 @@
     }
 }
 
-
-
-
 .content {
     width: 100%;
     height: auto;
@@ -84,20 +80,6 @@
     top: 500px;
     padding-top: 50px;
     padding-bottom: 130px;
-
-    // .full_video {
-    //     width: 100%;
-    //     height: 500px;
-    //     background-color: aqua;
-    //     margin-bottom: 60px;
-    //     position: relative;
-
-    //     img {
-    //         position: absolute;
-    //         width: 100%;
-    //         height: 500px;
-    //     }
-    // }
 
     .detil {
         padding: 0px 160px;
@@ -112,12 +94,43 @@
 
     .main_scroll {
         width: 100%;
-        height: 900px;
+        height: 750px;
         border-radius: 20px;
-        background-color: palegoldenrod;
         margin-bottom: 80px;
-        background-image: url(../img/tambutins_main.PNG);
-        @include background-set;
+        position: relative;
+        overflow: hidden;
+        transition: 5s;
+
+        img {
+            position: absolute;
+            width: 100%;
+            transition: 20s;
+
+            &:hover {
+                transform: translateY(-85%);
+            }
+        }
+
+        video {
+            position: absolute;
+            width: 102%;
+            
+        }
+
+        // &:after {
+        //     content: "Hover";
+        //     text-align: center;
+        //     padding-top: 400px;
+        //     font-size: 50px;
+        //     color: $wh;
+        //     font-family: 'ABCFavorit-Bold';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(0, 0, 0, 0.521);
+        // }
     }
 
     .txt_group {
@@ -160,13 +173,39 @@
         }
     }
 
-    .sub_mockup {
-        width: 100%;
-        height: 900px;
-        border-radius: 20px;
-        background-color: darkcyan;
-        margin-top: 80px;
-        margin-bottom: 150px;
+    .subWrap {
+        @include flex-between;
+
+        .sub_scroll {
+            width: 48%;
+            height: 750px;
+            border-radius: 20px;
+            background-color: darkcyan;
+            margin-top: 80px;
+            margin-bottom: 150px;
+            // position: relative;
+            // overflow: hidden;
+            // transition: 5s;
+
+            // img {
+            //     position: absolute;
+            //     width: 100%;
+            //     transition: 20s;
+
+            //     &:hover {
+            //         transform: translateY(-90%);
+            //     }
+            // }
+        }
+
+        .sub_mockup {
+            width: 48%;
+            height: 750px;
+            border-radius: 20px;
+            background-color: darkcyan;
+            margin-top: 80px;
+            margin-bottom: 150px;
+        }
     }
 
     .next {
@@ -195,8 +234,6 @@
     }
 }
 
-
-
 .sub_footer {
     width: 100%;
     height: 70vh;
@@ -205,7 +242,6 @@
     position: relative;
     top: 500px;
     border-top: 1px solid $wh;
-
 
     .wrap {
         overflow: hidden;
@@ -237,7 +273,6 @@
             margin-bottom: 20px;
         }
     }
-
 
     .foot {
         color: $wh;
