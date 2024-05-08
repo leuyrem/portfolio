@@ -71,6 +71,13 @@ button {
   margin-top: -20px;
   margin-bottom: 30px;
 }
+.container .box2 p {
+  margin-top: -50px;
+}
+.container .box2 span {
+  font-size: 30px;
+  margin-left: 50px;
+}
 .container .box3 {
   display: flex;
   align-items: center;
@@ -124,15 +131,6 @@ button {
   margin-bottom: 80px;
   position: relative;
   overflow: hidden;
-  transition: 5s;
-}
-.content .main_scroll img {
-  position: absolute;
-  width: 100%;
-  transition: 20s;
-}
-.content .main_scroll img:hover {
-  transform: translateY(-85%);
 }
 .content .main_scroll video {
   position: absolute;
