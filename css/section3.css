@@ -105,6 +105,9 @@ button {
   perspective: 700px;
   cursor: pointer;
 }
+.section3 .tamburins img {
+  display: none;
+}
 .section3 .tamburins .list_1 {
   position: absolute;
   top: 0;
@@ -131,6 +134,14 @@ button {
   transform: translateY(-60px) rotateX(90deg);
   background-color: #F9B71B;
 }
+.section3 .tamburins:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -200px;
+  z-index: 9999;
+  border-radius: 10px;
+}
 .section3 .tamburins:hover .list_1 {
   transform: rotateX(-90deg);
 }
@@ -140,6 +151,9 @@ button {
   margin: 10px auto;
   perspective: 700px;
   cursor: pointer;
+}
+.section3 .millie img {
+  display: none;
 }
 .section3 .millie .list_2 {
   position: absolute;
@@ -167,6 +181,14 @@ button {
   transform: translateY(-60px) rotateX(90deg);
   background-color: #30E462;
 }
+.section3 .millie:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -200px;
+  z-index: 1;
+  border-radius: 10px;
+}
 .section3 .millie:hover .list_2 {
   transform: rotateX(-90deg);
 }
@@ -176,6 +198,9 @@ button {
   margin: 10px auto;
   perspective: 700px;
   cursor: pointer;
+}
+.section3 .water img {
+  display: none;
 }
 .section3 .water .list_3 {
   position: absolute;
@@ -202,6 +227,14 @@ button {
 .section3 .water .list_3 div:nth-child(2) {
   transform: translateY(-60px) rotateX(90deg);
   background-color: #1795f0;
+}
+.section3 .water:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -200px;
+  z-index: 1;
+  border-radius: 10px;
 }
 .section3 .water:hover .list_3 {
   transform: rotateX(-90deg);

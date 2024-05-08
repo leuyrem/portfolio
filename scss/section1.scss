@@ -40,13 +40,16 @@ footer {
     position: relative;
     overflow: hidden;
 
-    .contact {
+    .f_contact {
         position: absolute;
         top: 40px;
         left: 130px;
         display: flex;
         justify-content: space-between;
         width: 450px;
+        color: $wh;
+        opacity: 0;
+        transition: 0.7s ease-in-out;
 
         div {
             &:nth-of-type(1) {
@@ -55,13 +58,11 @@ footer {
         }
 
         span {
-            color: $wh;
             font-size: 20px;
             font-family: 'NeueHaasDisplay-Mediu';
         }
 
         h1 {
-            color: $wh;
             text-decoration: underline;
             margin-bottom: 20px;
         }
@@ -75,44 +76,85 @@ footer {
         height: 400px;
         margin-top: 150px;
         position: relative;
+        transition: 1s ease-in-out;
 
         p {
             letter-spacing: -20px;
         }
 
-        &::before {
-            content: "for";
-            position: absolute;
-            top: 200px;
-            left: 480px;
-            background-color: $be;
-            width: 120px;
-            height: 45px;
-            border-radius: 50px;
-            font-size: 33px;
-            display: inline;
-            align-content: center;
-            justify-content: center;
-            @include border ($wh, 2.5px);
-            color: $wh;
+        span {
+            &:nth-of-type(1) {
+                position: absolute;
+                top: 200px;
+                left: 480px;
+                background-color: $be;
+                width: 120px;
+                height: 45px;
+                border-radius: 50px;
+                font-size: 33px;
+                display: inline;
+                align-content: center;
+                justify-content: center;
+                @include border ($wh, 2.5px);
+                color: $wh;
+                transition: 0.5s linear;
+                transition-delay: 1s;
+            }
+
+            &:nth-of-type(2) {
+                position: absolute;
+                bottom: 30px;
+                right: 580px;
+                background-color: $be;
+                width: 190px;
+                height: 45px;
+                border-radius: 50px;
+                font-size: 33px;
+                display: inline;
+                align-content: center;
+                justify-content: center;
+                @include border ($wh, 2.5px);
+                color: $wh;
+                transition: 0.5s linear;
+                transition-delay: 1.2s;
+            }
         }
 
-        &::after {
-            content: "visiting!";
-            position: absolute;
-            bottom: 30px;
-            right: 580px;
-            background-color: $be;
-            width: 190px;
-            height: 45px;
-            border-radius: 50px;
-            font-size: 33px;
-            display: inline;
-            align-content: center;
-            justify-content: center;
-            @include border ($wh, 2.5px);
-            color: $wh;
-        }
+        // &::before {
+        //     content: "for";
+        //     position: absolute;
+        //     top: 200px;
+        //     left: 480px;
+        //     background-color: $be;
+        //     width: 120px;
+        //     height: 45px;
+        //     border-radius: 50px;
+        //     font-size: 33px;
+        //     display: inline;
+        //     align-content: center;
+        //     justify-content: center;
+        //     @include border ($wh, 2.5px);
+        //     color: $wh;
+        //     transition: 1.5s ease-in-out;
+        // }
+
+        // &::after {
+        //     content: "visiting!";
+        //     position: absolute;
+        //     bottom: 30px;
+        //     right: 580px;
+        //     background-color: $be;
+        //     width: 190px;
+        //     height: 45px;
+        //     border-radius: 50px;
+        //     font-size: 33px;
+        //     display: inline;
+        //     align-content: center;
+        //     justify-content: center;
+        //     @include border ($wh, 2.5px);
+        //     color: $wh;
+        //     transition: 1.8s ease-in-out;
+        // }
     }
 }
 
@@ -219,11 +261,12 @@ footer {
                 font-size: 16px;
                 font-family: 'Noto Sans KR', sans-serif;
                 margin-left: 350px;
-            
+
                 span {
                     font-weight: 900;
                 }
             }
+
             &:nth-child(3) {
                 text-align: right;
             }

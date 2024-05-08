@@ -123,7 +123,7 @@
         video {
             position: absolute;
             width: 102%;
-            
+
         }
     }
 
@@ -241,13 +241,16 @@
         overflow: hidden;
     }
 
-    .contact {
+    .f_contact {
         position: absolute;
         top: 40px;
         left: 160px;
         display: flex;
         justify-content: space-between;
         width: 450px;
+        color: $wh;
+        opacity: 0;
+        transition: 0.7s ease-in-out;
 
         div {
             &:nth-of-type(1) {
@@ -256,13 +259,11 @@
         }
 
         span {
-            color: $wh;
             font-size: 20px;
             font-family: 'NeueHaasDisplay-Mediu';
         }
 
         h1 {
-            color: $wh;
             text-decoration: underline;
             margin-bottom: 20px;
         }
@@ -276,43 +277,48 @@
         height: 400px;
         margin-top: 150px;
         position: relative;
+        transition: 1s ease-in-out;
 
         p {
             letter-spacing: -20px;
         }
 
-        &::before {
-            content: "for";
-            position: absolute;
-            top: 200px;
-            left: 480px;
-            background-color: $ba;
-            width: 120px;
-            height: 45px;
-            border-radius: 50px;
-            font-size: 33px;
-            display: inline;
-            align-content: center;
-            justify-content: center;
-            @include border ($wh, 2.5px);
-            color: $wh;
-        }
+        span {
+            &:nth-of-type(1) {
+                position: absolute;
+                top: 200px;
+                left: 370px;
+                background-color: $ba;
+                width: 120px;
+                height: 45px;
+                border-radius: 50px;
+                font-size: 33px;
+                display: inline;
+                align-content: center;
+                justify-content: center;
+                @include border ($wh, 2.5px);
+                color: $wh;
+                transition: 0.5s linear;
+                transition-delay: 1s;
+            }
 
-        &::after {
-            content: "visiting!";
-            position: absolute;
-            bottom: 30px;
-            right: 580px;
-            background-color: $ba;
-            width: 190px;
-            height: 45px;
-            border-radius: 50px;
-            font-size: 33px;
-            display: inline;
-            align-content: center;
-            justify-content: center;
-            @include border ($wh, 2.5px);
-            color: $wh;
+            &:nth-of-type(2) {
+                position: absolute;
+                bottom: 30px;
+                right: 480px;
+                background-color: $ba;
+                width: 190px;
+                height: 45px;
+                border-radius: 50px;
+                font-size: 33px;
+                display: inline;
+                align-content: center;
+                justify-content: center;
+                @include border ($wh, 2.5px);
+                color: $wh;
+                transition: 0.5s linear;
+                transition-delay: 1.2s;
+            }
         }
     }
 }

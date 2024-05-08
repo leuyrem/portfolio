@@ -7,13 +7,11 @@ function scrollRotate() {
     let image = document.getElementById("rotate");
     image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
     }
-
 window.addEventListener("scroll", scrollRotate);
 
 
 //메인페이지 애니메이션
 document.addEventListener('DOMContentLoaded', () => {
-
     const name_U = document.querySelector('.name_U');
     setTimeout(() => {
       name_U.style.opacity = '1';
@@ -40,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name_M.style.opacity = '1';
       name_M.style.transform = 'translateY(0)';
       create_main_ani(name_M);
-    }, 300);
+    }, 400);
 
     const t_txt = document.querySelector('.top_text');
     setTimeout(() => {
@@ -77,3 +75,36 @@ $('.tit').click(function () {
     $(this).siblings('.tit').removeClass('active')
  });
 
+window.addEventListener('scroll', function(){
+    console.log(window.scrollY)
+});
+
+//프로젝트
+document.addEventListener('mousemove', (e) => {
+  let mouseX = e.pageX + 10; // document의 x좌표값
+  // let mouseY = e.pageY + 10; // document의 y좌표값
+
+  let cursor = document.querySelector('.cursor');
+  cursor.style.left = mouseX + 'px';
+  // cursor.style.top = mouseY + 'px';
+})
+
+
+
+
+//푸터
+$(window).scroll(function () {
+  var move = $(this).scrollTop();
+
+  if(move < 2000){
+    $('.f_contact').css("transform","translateY(100px)").css("opacity","0");
+    $('.foot').css("transform", "translateY(200px)").css("opacity", "0");
+    $('.foot span').css("transform","translateY(100px)").css("opacity","0");
+  }
+
+  if(move > 2000){
+    $('.f_contact').css("transform","translateY(0px)").css("opacity","1");
+    $('.foot').css("transform","translateY(0px)").css("opacity","1");
+    $('.foot span').css("transform","translateY(0px)").css("opacity","1");
+  }
+});
