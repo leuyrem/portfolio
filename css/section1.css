@@ -65,32 +65,42 @@ header .menu button {
 footer {
   width: 100%;
   height: 70vh;
-  padding: 40px 50px;
+  padding: 40px 160px;
   background-color: #0500e8;
-  position: relative;
   overflow: hidden;
 }
-footer .f_contact {
-  position: absolute;
-  top: 40px;
-  left: 130px;
+footer .foot_board {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .foot_board .f_contact {
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   width: 450px;
   color: #fff;
   opacity: 0;
   transition: 0.7s ease-in-out;
 }
-footer .f_contact div:nth-of-type(1) {
+footer .foot_board .f_contact div:nth-of-type(1) {
   margin-top: 10px;
 }
-footer .f_contact span {
+footer .foot_board .f_contact span {
   font-size: 20px;
   font-family: "NeueHaasDisplay-Mediu";
 }
-footer .f_contact h1 {
+footer .foot_board .f_contact h1 {
   text-decoration: underline;
   margin-bottom: 20px;
+}
+footer .foot_board .copy {
+  color: #fff;
+  text-align: right;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
 }
 footer .foot {
   color: #fff;
@@ -98,7 +108,7 @@ footer .foot {
   font-family: "ABCFavorit-Bold";
   text-align: center;
   height: 400px;
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
   transition: 1s ease-in-out;
 }

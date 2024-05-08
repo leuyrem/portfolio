@@ -82,14 +82,27 @@ window.addEventListener('scroll', function(){
 //프로젝트
 document.addEventListener('mousemove', (e) => {
   let mouseX = e.pageX + 10; // document의 x좌표값
-  // let mouseY = e.pageY + 10; // document의 y좌표값
 
-  let cursor = document.querySelector('.cursor');
-  cursor.style.left = mouseX + 'px';
-  // cursor.style.top = mouseY + 'px';
+  let cursor_t = document.querySelector('.cursor_t');
+  cursor_t.style.left = mouseX + 'px';
+  let cursor_m = document.querySelector('.cursor_m');
+  cursor_m.style.left = mouseX + 'px';
+  let cursor_w = document.querySelector('.cursor_w');
+  cursor_w.style.left = mouseX + 'px';
+  let cursor_a = document.querySelector('.cursor_a');
+  cursor_a.style.left = mouseX + 'px';
+  let cursor_j = document.querySelector('.cursor_j');
+  cursor_j.style.left = mouseX + 'px';
 })
 
+// document.addEventListener('mousemove', (e) => {
+//   let mouseX = e.pageX + 10; 
+//   let mouseY = e.pageY + 10; 
 
+//   let cursor = document.querySelector('.cursor_t, .cursor_m, .cursor_w');
+//   cursor.style.left = mouseX + 'px';
+//   cursor.style.top = mouseY + 'px';
+// })
 
 
 //푸터
@@ -97,13 +110,13 @@ $(window).scroll(function () {
   var move = $(this).scrollTop();
 
   if(move < 2000){
-    $('.f_contact').css("transform","translateY(100px)").css("opacity","0");
+    $('.f_contact, .copy').css("transform","translateY(100px)").css("opacity","0");
     $('.foot').css("transform", "translateY(200px)").css("opacity", "0");
     $('.foot span').css("transform","translateY(100px)").css("opacity","0");
   }
 
   if(move > 2000){
-    $('.f_contact').css("transform","translateY(0px)").css("opacity","1");
+    $('.f_contact, .copy').css("transform","translateY(0px)").css("opacity","1");
     $('.foot').css("transform","translateY(0px)").css("opacity","1");
     $('.foot span').css("transform","translateY(0px)").css("opacity","1");
   }

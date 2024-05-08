@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
     <section class="container">
         <div class="box1">
             <div class="participate">Personal Project - 참여도 100%</div>
-            <a href="index.html">←&nbsp;Prev Page</a>
+            <div class="prev"><a href="index.html">←&nbsp;Prev Page</a></div>
         </div>
         <div class="box2">
             <div class="title">TAMBURINS</div>
@@ -42,8 +43,10 @@
                 <span>●</span>상품클릭시 상세페이지로 이동<br>
                 <span>●</span>장바구니페이지 및 로그인 모달팝업창 구현
             </div>
-            <div class="document" onclick="window.open('https://drive.google.com/file/d/188xm9cV-yz-i7dRlOiuwYjULh2BZMORM/view?usp=drive_link');" target="_blank">
-            <span>●</span><br>GO TO THE<br>PPT<br>DOCUMENT
+            <div class="document"
+                onclick="window.open('https://drive.google.com/file/d/188xm9cV-yz-i7dRlOiuwYjULh2BZMORM/view?usp=drive_link');"
+                target="_blank">
+                <span>●</span><br>GO TO THE<br>PPT<br>DOCUMENT
             </div>
         </div>
     </section>
@@ -53,55 +56,62 @@
             <div class="detil">
                 <div class="main_scroll">
                     <video autoplay loop muted>
-                        <source src="./video/TAMBURINS.mp4"
-                            type="video/mp4">
+                        <source src="./video/TAMBURINS.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="txt_group">
                     <div class="key">
                         <span>key-point</span><br>
-                       <p>
-                        #리액트 컴포넌트의 이해<br>
-                        #Redux 라이브러리를 통한 데이터 및 상태 관리<br>
-                        #Route 기능을 통한 페이지 이동 구현<br>
-                        #useNavigate를 통한 페이지 이동<br>
-                        #Map()을 사용하여 반복되는 컴포넌트를 렌더링
-                       </p> 
+                        <p>
+                            #리액트 컴포넌트의 이해<br>
+                            #Redux 라이브러리를 통한 데이터 및 상태 관리<br>
+                            #Route 기능을 통한 페이지 이동 구현<br>
+                            #useNavigate를 통한 페이지 이동<br>
+                            #Map()을 사용하여 반복되는 컴포넌트를 렌더링
+                        </p>
                     </div>
                     <button onclick="window.open('https://leuyrem.github.io/tamburins/');">View More</button>
-                </div> 
+                </div>
 
                 <div class="subWrap">
-                <div class="sub_scroll">
-                   
-                </div>
-                <div class="sub_mockup"></div>                    
+                    <div class="sub_scroll">
+
+                    </div>
+                    <div class="sub_mockup"></div>
                 </div>
 
-                <button class="next" onclick="location.href ='sub_millie.html'"><p>Next Project</p></button><br>
+                <button class="next" onclick="location.href ='sub_millie.html'">
+                    <p>Next Project</p>
+                </button><br>
             </div>
         </section>
 
         <div class="sub_footer">
             <div class="wrap">
-                <div class="f_contact">
-                    <div><span>Contact</span></div>
-                    <div>
-                        <h1>✆ 010-5792-3804</h1>
-                        <h1>✉ leuyren@gmail.com</h1>
+                <div class="foot_board">
+                    <div class="f_contact">
+                        <div><span>Contact</span></div>
+                        <div>
+                            <h1>✆ 010-5792-3804</h1>
+                            <h1>✉ leuyren@gmail.com</h1>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                        <p>© 2024 LEEYURIM. All Rights Reserved.</p>
                     </div>
                 </div>
-            <div class="foot">
-                <p>Thanks</p>
-                <span>for</span>
-                <span>visiting!</span>
+                <div class="foot">
+                    <p>Thanks</p>
+                    <span>for</span>
+                    <span>visiting!</span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
-    <script src="js/sub.js"></script>    
+    <script src="js/sub.js"></script>
     <script src="js/index.js"></script>
 </body>
 
