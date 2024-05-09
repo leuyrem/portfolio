@@ -37,6 +37,10 @@ button {
   font-family: "ABCFavorit";
   src: url(../fonts/ABCFavorit.otf) format("opentype");
 }
+body {
+  overflow-x: hidden;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -60,6 +64,11 @@ header .menu button {
   font-size: 19px;
   padding: 8px 15px;
   font-family: "NeueHaasDisplay-Mediu";
+}
+header .menu button:hover {
+  background-color: #0500e8;
+  color: #fff;
+  border: #fff solid 2.5px;
 }
 
 footer {
@@ -108,7 +117,7 @@ footer .foot {
   font-family: "ABCFavorit-Bold";
   text-align: center;
   height: 400px;
-  margin-top: 100px;
+  margin-top: 20px;
   position: relative;
   transition: 1s ease-in-out;
 }
@@ -118,7 +127,7 @@ footer .foot p {
 footer .foot span:nth-of-type(1) {
   position: absolute;
   top: 200px;
-  left: 480px;
+  left: 370px;
   background-color: #0500e8;
   width: 120px;
   height: 45px;
@@ -135,7 +144,7 @@ footer .foot span:nth-of-type(1) {
 footer .foot span:nth-of-type(2) {
   position: absolute;
   bottom: 30px;
-  right: 580px;
+  right: 480px;
   background-color: #0500e8;
   width: 190px;
   height: 45px;

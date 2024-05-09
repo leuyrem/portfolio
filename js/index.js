@@ -81,7 +81,7 @@ window.addEventListener('scroll', function(){
 
 //프로젝트
 document.addEventListener('mousemove', (e) => {
-  let mouseX = e.pageX + 10; // document의 x좌표값
+  let mouseX = e.pageX + 10; 
 
   let cursor_t = document.querySelector('.cursor_t');
   cursor_t.style.left = mouseX + 'px';
@@ -93,17 +93,7 @@ document.addEventListener('mousemove', (e) => {
   cursor_a.style.left = mouseX + 'px';
   let cursor_j = document.querySelector('.cursor_j');
   cursor_j.style.left = mouseX + 'px';
-})
-
-// document.addEventListener('mousemove', (e) => {
-//   let mouseX = e.pageX + 10; 
-//   let mouseY = e.pageY + 10; 
-
-//   let cursor = document.querySelector('.cursor_t, .cursor_m, .cursor_w');
-//   cursor.style.left = mouseX + 'px';
-//   cursor.style.top = mouseY + 'px';
-// })
-
+});
 
 //푸터
 $(window).scroll(function () {

@@ -8,7 +8,7 @@
     text-align: center;
     @include col;
     font-family: 'NeueHaasDisplay-Bold';
-    overflow-x: hidden;
+    // overflow-x: hidden;
     
     .project {
         font-size: 16px;
@@ -39,14 +39,16 @@
         margin-right: -5px;
     }
 
-
     .animate {
         position: relative;
         width: 100%;
         max-width: 100%;
         height: auto;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        overflow: hidden;
+    }
+
+    .content {
+
     }
 
     .track {
@@ -79,7 +81,6 @@
         
         img {
             display: none;
-            
         }
 
         .list_1 {
@@ -90,7 +91,6 @@
             height: 100%;
             transition: all 1s;
             transform-style: preserve-3d;
-            
 
             div {
                 position: absolute;
@@ -244,6 +244,10 @@
         perspective: 700px;
         cursor: pointer;
 
+        img {
+            display: none;
+        }
+
         .list_4 {
             position: absolute;
             top: 0;
@@ -273,6 +277,15 @@
         }
 
         &:hover {
+            img {
+                display: block;
+                width: 400px;
+                position: absolute;
+                top: -220px;
+                z-index: 1;
+                border-radius: 10px;
+            }
+
             .list_4 {
                 transform: rotateX(-90deg);
             }
@@ -285,6 +298,10 @@
         margin: 10px auto;
         perspective: 700px;
         cursor: pointer;
+
+        img {
+            display: none;
+        }
 
         .list_5 {
             position: absolute;
@@ -317,6 +334,15 @@
         }
 
         &:hover {
+            img {
+                display: block;
+                width: 400px;
+                position: absolute;
+                top: -220px;
+                z-index: 1;
+                border-radius: 10px;
+            }
+
             .list_5 {
                 transform: rotateX(-90deg);
             }

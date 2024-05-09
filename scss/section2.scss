@@ -50,6 +50,13 @@
     }
 }
 
+
+
+
+
+
+
+
 .accordion {
     height: 100%;
     @include end;
@@ -337,7 +344,7 @@
                 }
             }
 
-            
+
             // .profileList {
             //     &::-webkit-scrollbar{
             //     width: 10px;
@@ -371,7 +378,7 @@
                 }
 
                 ul {
-                    &:nth-of-type(12) {
+                    &:nth-of-type(9) {
                         border-bottom: 1px solid $ba;
                         margin-bottom: 20px;
                     }
@@ -403,7 +410,7 @@
                     span {
                         color: $ye;
                     }
-                
+
                     &:after {
                         display: block;
                         content: '';

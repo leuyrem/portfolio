@@ -46,7 +46,6 @@ button {
   flex-direction: column;
   justify-content: center;
   font-family: "NeueHaasDisplay-Bold";
-  overflow-x: hidden;
 }
 .section3 .project {
   font-size: 16px;
@@ -78,8 +77,7 @@ button {
   width: 100%;
   max-width: 100%;
   height: auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .section3 .track {
   position: absolute;
@@ -246,6 +244,9 @@ button {
   perspective: 700px;
   cursor: pointer;
 }
+.section3 .museum img {
+  display: none;
+}
 .section3 .museum .list_4 {
   position: absolute;
   top: 0;
@@ -272,6 +273,14 @@ button {
   transform: translateY(-60px) rotateX(90deg);
   background-color: #30E462;
 }
+.section3 .museum:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -220px;
+  z-index: 1;
+  border-radius: 10px;
+}
 .section3 .museum:hover .list_4 {
   transform: rotateX(-90deg);
 }
@@ -281,6 +290,9 @@ button {
   margin: 10px auto;
   perspective: 700px;
   cursor: pointer;
+}
+.section3 .jackon img {
+  display: none;
 }
 .section3 .jackon .list_5 {
   position: absolute;
@@ -307,6 +319,14 @@ button {
 .section3 .jackon .list_5 div:nth-child(2) {
   transform: translateY(-60px) rotateX(90deg);
   background-color: #FF2803;
+}
+.section3 .jackon:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -220px;
+  z-index: 1;
+  border-radius: 10px;
 }
 .section3 .jackon:hover .list_5 {
   transform: rotateX(-90deg);

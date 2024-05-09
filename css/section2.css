@@ -337,7 +337,7 @@ button {
 .accordion .technical_skill.active .profileList li img {
   width: 50px;
 }
-.accordion .technical_skill.active .profileList ul:nth-of-type(12) {
+.accordion .technical_skill.active .profileList ul:nth-of-type(9) {
   border-bottom: 1px solid #000;
   margin-bottom: 20px;
 }

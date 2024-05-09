@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NeueHaasDisplay-Mediu';
+    src: url(../fonts/NeueHaasDisplayMediu.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NeueHaasDisplay-Bold';
+    src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'ABCFavorit-Bold';
+    src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'ABCFavorit';
+    src: url(../fonts/ABCFavorit.otf) format("opentype");
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
