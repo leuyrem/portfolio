@@ -21,20 +21,44 @@ header {
         }
     }
 
-    .menu {
-        button {
-            border-radius: 50px;
-            background-color: $wh;
-            color: $be;
-            @include border ($be, 2.5px);
-            font-size: 19px;
-            padding: 8px 15px;
-            font-family: 'NeueHaasDisplay-Mediu';
+    .btn {
+        border-radius: 50px;
+        padding: 8px 15px;
+        @include border ($be, 2.5px);
+        background-color: $wh;
+        position: relative;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
 
-            &:hover {
-                background-color: $be;
+        p {
+            text-align: center;
+            color: $be;
+            font-size: 19px;
+            font-family: 'NeueHaasDisplay-Mediu';
+            position: relative;
+            z-index: 1;
+            transition: all 1s ease;
+        }
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $be;
+            position: absolute;
+            transition: all 1s ease;
+            top: 0;
+            left: -210px;
+        }
+
+        &:hover {
+            p {
                 color: $wh;
-                @include border ($wh, 2.5px);
+            }
+
+            &:before {
+                left: 0;
             }
         }
     }
@@ -147,8 +171,8 @@ footer {
     .top_text {
         position: absolute;
         top: 48px;
-        left: 7%;
-        width: 80%;
+        left: 15.5%;
+        width: 70%;
         text-align: center;
         color: $be;
         font-family: 'NeueHaasDisplay-Mediu';
@@ -241,7 +265,7 @@ footer {
             &:nth-child(2) {
                 font-size: 16px;
                 font-family: 'Noto Sans KR', sans-serif;
-                margin-left: 350px;
+                margin-left: 200px;
 
                 span {
                     font-weight: 900;

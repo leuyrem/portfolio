@@ -1,0 +1,309 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "NeueHaasDisplay-Mediu";
+  src: url(../fonts/NeueHaasDisplayMediu.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NeueHaasDisplay-Bold";
+  src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "ABCFavorit-Bold";
+  src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "ABCFavorit";
+  src: url(../fonts/ABCFavorit.otf) format("opentype");
+}
+.container {
+  width: 100%;
+  height: 60vh;
+  padding: 0px 160px;
+  position: fixed;
+  color: #0500e8;
+  font-family: "ABCFavorit-Bold";
+}
+.container .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.container .box1 .participate {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+}
+.container .box1 a {
+  cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #0500e8;
+  display: inline-block;
+}
+.container .box1 a:after {
+  display: block;
+  content: "";
+  border-bottom: 2.5px solid #0500e8;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+  padding-bottom: 5px;
+}
+.container .box1 a:hover:after {
+  transform: scaleX(1);
+}
+.container .box2 .title {
+  font-size: 120px;
+}
+.container .box2 .sub {
+  font-size: 30px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+.container .box2 p {
+  margin-top: -50px;
+}
+.container .box2 span {
+  font-size: 30px;
+  margin-left: 50px;
+}
+.container .box3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.container .box3 .about {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+}
+.container .box3 .about span {
+  font-size: 7px;
+  margin-right: 10px;
+  position: relative;
+  top: -3px;
+}
+.container .box3 .document {
+  cursor: pointer;
+  text-align: right;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+}
+.container .box3 .document:after {
+  display: block;
+  content: "";
+  border-bottom: 2.5px solid #0500e8;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+  padding-bottom: 5px;
+}
+.container .box3 .document:hover:after {
+  transform: scaleX(1);
+}
+.container .box3 .document span {
+  font-size: 10px;
+  float: right;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  position: relative;
+  top: 500px;
+  padding-top: 50px;
+  padding-bottom: 130px;
+}
+.content .detil {
+  padding: 0px 160px;
+}
+.content .detil button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+.content .main_scroll {
+  width: 100%;
+  height: 750px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.content .main_scroll video {
+  position: absolute;
+  width: 102%;
+}
+.content .txt_group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .txt_group button {
+  font-family: "ABCFavorit-Bold";
+  font-size: 20px;
+  display: inline-block;
+}
+.content .txt_group button:after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #fff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.content .txt_group button:hover:after {
+  transform: scaleX(1);
+}
+.content .key {
+  color: #fff;
+  font-size: 19px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.content .key span {
+  font-family: "ABCFavorit-Bold";
+  font-size: 30px;
+}
+.content .key p {
+  padding-top: 20px;
+}
+.content .next {
+  font-family: "ABCFavorit-Bold";
+  font-size: 60px;
+  float: right;
+}
+.content .next span {
+  display: inline-block;
+}
+.content .next:after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #fff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.content .next:hover:after {
+  transform: scaleX(1);
+}
+
+.sub_footer {
+  width: 100%;
+  height: 70vh;
+  padding: 40px 160px;
+  background-color: #000;
+  position: relative;
+  top: 500px;
+  border-top: 1px solid #fff;
+}
+.sub_footer .wrap {
+  overflow: hidden;
+}
+.sub_footer .foot_board {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sub_footer .foot_board .f_contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 450px;
+  color: #fff;
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+}
+.sub_footer .foot_board .f_contact div:nth-of-type(1) {
+  margin-top: 10px;
+}
+.sub_footer .foot_board .f_contact span {
+  font-size: 20px;
+  font-family: "NeueHaasDisplay-Mediu";
+}
+.sub_footer .foot_board .f_contact h1 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.sub_footer .foot_board .copy {
+  color: #fff;
+  text-align: right;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  transition: 0.8s ease-in-out;
+}
+.sub_footer .foot {
+  color: #fff;
+  font-size: 400px;
+  font-family: "ABCFavorit-Bold";
+  text-align: center;
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+  transition: 1s ease-in-out;
+}
+.sub_footer .foot p {
+  letter-spacing: -20px;
+}
+.sub_footer .foot span:nth-of-type(1) {
+  position: absolute;
+  top: 200px;
+  left: 370px;
+  background-color: #000;
+  width: 120px;
+  height: 45px;
+  border-radius: 50px;
+  font-size: 33px;
+  display: inline;
+  align-content: center;
+  justify-content: center;
+  border: #fff solid 2.5px;
+  color: #fff;
+  transition: 0.5s linear;
+  transition-delay: 1s;
+}
+.sub_footer .foot span:nth-of-type(2) {
+  position: absolute;
+  bottom: 30px;
+  right: 480px;
+  background-color: #000;
+  width: 190px;
+  height: 45px;
+  border-radius: 50px;
+  font-size: 33px;
+  display: inline;
+  align-content: center;
+  justify-content: center;
+  border: #fff solid 2.5px;
+  color: #fff;
+  transition: 0.5s linear;
+  transition-delay: 1.2s;
+}

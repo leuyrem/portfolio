@@ -1,0 +1,333 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "NeueHaasDisplay-Mediu";
+  src: url(../fonts/NeueHaasDisplayMediu.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NeueHaasDisplay-Bold";
+  src: url(../fonts/NeueHaasDisplayBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "ABCFavorit-Bold";
+  src: url(../fonts/ABCFavorit-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "ABCFavorit";
+  src: url(../fonts/ABCFavorit.otf) format("opentype");
+}
+.section3 {
+  width: 100%;
+  height: 100vh;
+  font-size: 140px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "NeueHaasDisplay-Bold";
+}
+.section3 .project {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.section3 .project span {
+  font-size: 10px;
+  margin-right: 7px;
+}
+.section3 .project .clickto {
+  font-family: "NeueHaasDisplay-Mediu";
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-align: center;
+  padding: 2px 6px;
+}
+.section3 span {
+  font-size: 125px;
+  margin-top: -35px;
+  margin-right: -5px;
+}
+.section3 .animate {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.section3 .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: loop 20s linear infinite;
+}
+.section3 .track:active {
+  animation-play-state: paused;
+}
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.section3 .tamburins {
+  width: 100%;
+  height: 130px;
+  margin: 10px auto;
+  perspective: 700px;
+  cursor: pointer;
+}
+.section3 .tamburins img {
+  display: none;
+}
+.section3 .tamburins .list_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.section3 .tamburins .list_1 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section3 .tamburins .list_1 div:nth-child(1) {
+  transform: translateZ(65px);
+}
+.section3 .tamburins .list_1 div:nth-child(2) {
+  transform: translateY(-60px) rotateX(90deg);
+  background-color: #F9B71B;
+}
+.section3 .tamburins:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -220px;
+  z-index: 9999;
+  border-radius: 10px;
+}
+.section3 .tamburins:hover .list_1 {
+  transform: rotateX(-90deg);
+}
+.section3 .millie {
+  width: 100%;
+  height: 130px;
+  margin: 10px auto;
+  perspective: 700px;
+  cursor: pointer;
+}
+.section3 .millie img {
+  display: none;
+}
+.section3 .millie .list_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.section3 .millie .list_2 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section3 .millie .list_2 div:nth-child(1) {
+  transform: translateZ(65px);
+}
+.section3 .millie .list_2 div:nth-child(2) {
+  transform: translateY(-60px) rotateX(90deg);
+  background-color: #30E462;
+}
+.section3 .millie:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -220px;
+  z-index: 1;
+  border-radius: 10px;
+}
+.section3 .millie:hover .list_2 {
+  transform: rotateX(-90deg);
+}
+.section3 .water {
+  width: 100%;
+  height: 130px;
+  margin: 10px auto;
+  perspective: 700px;
+  cursor: pointer;
+}
+.section3 .water img {
+  display: none;
+}
+.section3 .water .list_3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.section3 .water .list_3 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section3 .water .list_3 div:nth-child(1) {
+  transform: translateZ(65px);
+}
+.section3 .water .list_3 div:nth-child(2) {
+  transform: translateY(-60px) rotateX(90deg);
+  background-color: #1795f0;
+}
+.section3 .water:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -220px;
+  z-index: 1;
+  border-radius: 10px;
+}
+.section3 .water:hover .list_3 {
+  transform: rotateX(-90deg);
+}
+.section3 .museum {
+  width: 100%;
+  height: 130px;
+  margin: 10px auto;
+  perspective: 700px;
+  cursor: pointer;
+}
+.section3 .museum img {
+  display: none;
+}
+.section3 .museum .list_4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.section3 .museum .list_4 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section3 .museum .list_4 div:nth-child(1) {
+  transform: translateZ(65px);
+}
+.section3 .museum .list_4 div:nth-child(2) {
+  transform: translateY(-60px) rotateX(90deg);
+  background-color: #30E462;
+}
+.section3 .museum:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -220px;
+  z-index: 1;
+  border-radius: 10px;
+}
+.section3 .museum:hover .list_4 {
+  transform: rotateX(-90deg);
+}
+.section3 .jackon {
+  width: 100%;
+  height: 130px;
+  margin: 10px auto;
+  perspective: 700px;
+  cursor: pointer;
+}
+.section3 .jackon img {
+  display: none;
+}
+.section3 .jackon .list_5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+.section3 .jackon .list_5 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section3 .jackon .list_5 div:nth-child(1) {
+  transform: translateZ(65px);
+}
+.section3 .jackon .list_5 div:nth-child(2) {
+  transform: translateY(-60px) rotateX(90deg);
+  background-color: #FF2803;
+}
+.section3 .jackon:hover img {
+  display: block;
+  width: 400px;
+  position: absolute;
+  top: -220px;
+  z-index: 1;
+  border-radius: 10px;
+}
+.section3 .jackon:hover .list_5 {
+  transform: rotateX(-90deg);
+}

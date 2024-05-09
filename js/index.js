@@ -56,11 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   });
 
-//애니메이션
-window.addEventListener('scroll', function(){
-    console.log(window.scrollY)
-});
 
+//애니메이션
 $(window).scroll(function (){
 var ws = $(this).scrollTop();
 var motto = $('.motto').offset().top;
@@ -69,15 +66,13 @@ if (ws > 350) {
 }
 });
 
+
 //프로필
 $('.tit').click(function () {
     $(this).toggleClass('active')  
     $(this).siblings('.tit').removeClass('active')
  });
 
-window.addEventListener('scroll', function(){
-    console.log(window.scrollY)
-});
 
 //프로젝트
 document.addEventListener('mousemove', (e) => {
@@ -94,6 +89,7 @@ document.addEventListener('mousemove', (e) => {
   let cursor_j = document.querySelector('.cursor_j');
   cursor_j.style.left = mouseX + 'px';
 });
+
 
 //푸터
 $(window).scroll(function () {

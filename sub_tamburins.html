@@ -24,11 +24,11 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="img/logo.png" id="rotate" alt="logo"></a></div>
-        <div class="menu"><a href="https://github.com/leuyrem"><button>Click to GitHub</button></a></div>
+        <div class="btn" onclick="window.open('https://github.com/leuyrem');"><p>Click to GitHub</p></div>
     </header>
 
 
-    <section class="container">
+    <div class="container">
         <div class="box1">
             <div class="participate">Personal Project - 참여도 100%</div>
             <div class="prev"><a href="index.html">←&nbsp;Prev Page</a></div>
@@ -44,15 +44,14 @@
                 <span>●</span>장바구니페이지 및 로그인 모달팝업창 구현
             </div>
             <div class="document"
-                onclick="window.open('https://drive.google.com/file/d/188xm9cV-yz-i7dRlOiuwYjULh2BZMORM/view?usp=drive_link');"
-                target="_blank">
+                onclick="window.open('https://drive.google.com/file/d/188xm9cV-yz-i7dRlOiuwYjULh2BZMORM/view?usp=drive_link');">
                 <span>●</span><br>GO TO THE<br>PPT<br>DOCUMENT
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="inner">
-        <section class="content">
+        <div class="content">
             <div class="detil">
                 <div class="main_scroll">
                     <video autoplay loop muted>
@@ -72,19 +71,9 @@
                     </div>
                     <button onclick="window.open('https://leuyrem.github.io/tamburins/');">View More</button>
                 </div>
-
-                <div class="subWrap">
-                    <div class="sub_scroll">
-
-                    </div>
-                    <div class="sub_mockup"></div>
-                </div>
-
-                <button class="next" onclick="location.href ='sub_millie.html'">
-                    <p>Next Project</p>
-                </button><br>
+                <button class="next" onclick="location.href ='sub_millie.html'"><span>Next Project</span></button><br>
             </div>
-        </section>
+        </div>
 
         <div class="sub_footer">
             <div class="wrap">

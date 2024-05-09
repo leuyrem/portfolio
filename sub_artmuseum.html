@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,11 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="img/logo.png" id="rotate" alt="logo"></a></div>
-        <div class="menu"><a href="https://github.com/leuyrem"><button>Click to GitHub</button></a></div>
+        <div class="btn" onclick="window.open('https://github.com/leuyrem');"><p>Click to GitHub</p></div>
     </header>
 
 
-    <section class="container">
+    <div class="container">
         <div class="box1">
             <div class="participate">Personal Project - 참여도 100%</div>
             <a href="sub_team.html">←&nbsp;Prev Page</a>
@@ -42,64 +43,63 @@
                 <span>●</span>국립현대미술관을 모티브로 전시전 느낌이 나도록 제작<br>
                 <span>●</span>ScrollTop을 활용해 사이트를 생동감있게 표현
             </div>
-            <div class="document" onclick="window.open('https://drive.google.com/file/d/1r2ch7l5iX1kavY7ZNtge_nrchQO2Ciwv/view?usp=drive_link');" target="_blank">
+            <div class="document"
+                onclick="window.open('https://drive.google.com/file/d/1r2ch7l5iX1kavY7ZNtge_nrchQO2Ciwv/view?usp=drive_link');">
                 <span>●</span><br>GO TO THE<br>PPT<br>DOCUMENT
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="inner">
-        <section class="content">
+        <div class="content">
             <div class="detil">
                 <div class="main_scroll">
                     <video autoplay loop muted>
-                        <source src="./video/artmuseum.mp4"
-                            type="video/mp4">
+                        <source src="./video/artmuseum.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="txt_group">
                     <div class="key">
                         <span>key-point</span><br>
-                       <p>
-                        #jQuery를 활용해 햄버거 버튼 제작<br>
-                        #transform을 이용해 애니메이션효과 구현<br>
-                        #메뉴탭을 index를 사용하여 제작<br>
-                        #상세페이지 fadeIn으로 버튼 클릭시 내용 변경
-                       </p> 
+                        <p>
+                            #jQuery를 활용해 햄버거 버튼 제작<br>
+                            #transform을 이용해 애니메이션효과 구현<br>
+                            #메뉴탭을 index를 사용하여 제작<br>
+                            #상세페이지 fadeIn으로 버튼 클릭시 내용 변경
+                        </p>
                     </div>
                     <button onclick="window.open('https://leuyrem.github.io/Artmuseum/');">View More</button>
-                </div> 
-
-                <div class="subWrap">
-                    <div class="sub_scroll">
-                       
-                    </div>
-                    <div class="sub_mockup"></div>                    
-                    </div>
-                <button class="next" onclick="location.href ='sub_jackson.html'"><p>Next Project</p></button><br>
+                </div>
+                <button class="next" onclick="location.href ='sub_jackson.html'"><span>Next Project</span></button><br>
             </div>
-        </section>
+        </div>
 
         <div class="sub_footer">
             <div class="wrap">
-                <div class="f_contact">
-                    <div><span>Contact</span></div>
-                    <div>
-                        <h1>✆ 010-5792-3804</h1>
-                        <h1>✉ leuyren@gmail.com</h1>
+                <div class="foot_board">
+                    <div class="f_contact">
+                        <div><span>Contact</span></div>
+                        <div>
+                            <h1>✆ 010-5792-3804</h1>
+                            <h1>✉ leuyren@gmail.com</h1>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                        <p>© 2024 LEEYURIM. All Rights Reserved.</p>
                     </div>
                 </div>
-            <div class="foot">
-                <p>Thanks</p>
-                <span>for</span>
-                <span>visiting!</span>
+                <div class="foot">
+                    <p>Thanks</p>
+                    <span>for</span>
+                    <span>visiting!</span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
-    <script src="js/sub.js"></script>    
+    <script src="js/sub.js"></script>
     <script src="js/index.js"></script>
 </body>
 

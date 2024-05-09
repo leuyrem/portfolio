@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,11 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="img/logo.png" id="rotate" alt="logo"></a></div>
-        <div class="menu"><a href="https://github.com/leuyrem"><button>Click to GitHub</button></a></div>
+        <div class="btn" onclick="window.open('https://github.com/leuyrem');"><p>Click to GitHub</p></div>
     </header>
 
 
-    <section class="container">
+    <div class="container">
         <div class="box1">
             <div class="participate">Team Project - 참여도 45%</div>
             <a href="sub_millie.html">←&nbsp;Prev Page</a>
@@ -42,69 +43,65 @@
                 <span>●</span>메인 슬라이드, 앨범커버와 서브페이지 이달의 가수부분 담당<br>
                 <span>●</span>정형화 되어 있는 음악사이트가 아닌 레이아웃을 모색하여 구성
             </div>
-            <div class="document" onclick="window.open('https://drive.google.com/file/d/1lrDKxizu77yLYdcP8161rDS1RzRrLTt8/view?usp=drive_link');" target="_blank">
+            <div class="document"
+                onclick="window.open('https://drive.google.com/file/d/1lrDKxizu77yLYdcP8161rDS1RzRrLTt8/view?usp=drive_link');">
                 <span>●</span><br>GO TO THE<br>PPT<br>DOCUMENT
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="inner">
-        <section class="content">
-            <div class="full_video">
-
-            </div>
-
+        <div class="content">
             <div class="detil">
                 <div class="main_scroll">
                     <video autoplay loop muted>
-                        <source src="./video/WaterMelon.mp4"
-                            type="video/mp4">
+                        <source src="./video/WaterMelon.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="txt_group">
                     <div class="key">
                         <span>key-point</span><br>
-                       <p>
-                        #메인페이지 오토 슬라이드와 페이지 번호를 JavaScript를 사용하여 구성<br>
-                        #앨범커버목록을 querySelector을 사용하여 무한 슬라이드로 구현<br>
-                        #이달의 가수페이지에서 scrollTop을 사용해 메뉴를 배경색과 겹치지 않게 제작<br>
-                        #이달의 가수페이지에서 앨범커버와 곡의 내용을 첨부하기 위해 querySelector를 사용하여 2개의 페이지가 같이 넘어가도록 제작,<br>
-                        &nbsp;&nbsp;도트탭 클릭시에도 페이지가 변경될 수 있도록 구현 
-                       </p> 
+                        <p>
+                            #메인페이지 오토 슬라이드와 페이지 번호를 JavaScript를 사용하여 구성<br>
+                            #앨범커버목록을 querySelector을 사용하여 무한 슬라이드로 구현<br>
+                            #이달의 가수페이지에서 scrollTop을 사용해 메뉴를 배경색과 겹치지 않게 제작<br>
+                            #이달의 가수페이지에서 앨범커버와 곡의 내용을 첨부하기 위해 querySelector를 사용하여 2개의 페이지가 같이 넘어가도록 제작,<br>
+                            &nbsp;&nbsp;도트탭 클릭시에도 페이지가 변경될 수 있도록 구현
+                        </p>
                     </div>
                     <button onclick="window.open('https://leuyrem.github.io/Water_Melon/');">View More</button>
-                </div> 
-
-                <div class="subWrap">
-                    <div class="sub_scroll">
-                      
-                    </div>
-                    <div class="sub_mockup"></div>                    
-                    </div>
-                <button class="next" onclick="location.href ='sub_artmuseum.html'"><p>Next Project</p></button><br>
+                </div>
+                <button class="next" onclick="location.href ='sub_artmuseum.html'"><span>Next
+                        Project</span></button><br>
             </div>
-        </section>
+        </div>
 
         <div class="sub_footer">
             <div class="wrap">
-                <div class="f_contact">
-                    <div><span>Contact</span></div>
-                    <div>
-                        <h1>✆ 010-5792-3804</h1>
-                        <h1>✉ leuyren@gmail.com</h1>
+                <div class="foot_board">
+                    <div class="f_contact">
+                        <div><span>Contact</span></div>
+                        <div>
+                            <h1>✆ 010-5792-3804</h1>
+                            <h1>✉ leuyren@gmail.com</h1>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                        <p>© 2024 LEEYURIM. All Rights Reserved.</p>
                     </div>
                 </div>
-            <div class="foot">
-                <p>Thanks</p>
-                <span>for</span>
-                <span>visiting!</span>
+                <div class="foot">
+                    <p>Thanks</p>
+                    <span>for</span>
+                    <span>visiting!</span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
-    <script src="js/sub.js"></script>    
+    <script src="js/sub.js"></script>
     <script src="js/index.js"></script>
 </body>
 

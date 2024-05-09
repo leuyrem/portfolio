@@ -56,40 +56,19 @@ header .logo img {
   width: 50px;
   height: 50px;
 }
-header .btn {
+header .menu button {
   border-radius: 50px;
-  padding: 8px 15px;
-  border: #0500e8 solid 2.5px;
   background-color: #fff;
-  position: relative;
-  cursor: pointer;
-  transition: all 1s ease;
-  overflow: hidden;
-}
-header .btn p {
-  text-align: center;
   color: #0500e8;
+  border: #0500e8 solid 2.5px;
   font-size: 19px;
+  padding: 8px 15px;
   font-family: "NeueHaasDisplay-Mediu";
-  position: relative;
-  z-index: 1;
-  transition: all 1s ease;
 }
-header .btn:before {
-  content: "";
-  width: 100%;
-  height: 100%;
+header .menu button:hover {
   background-color: #0500e8;
-  position: absolute;
-  transition: all 1s ease;
-  top: 0;
-  left: -210px;
-}
-header .btn:hover p {
   color: #fff;
-}
-header .btn:hover:before {
-  left: 0;
+  border: #fff solid 2.5px;
 }
 
 footer {
@@ -188,8 +167,8 @@ footer .foot span:nth-of-type(2) {
 .section1 .top_text {
   position: absolute;
   top: 48px;
-  left: 15.5%;
-  width: 70%;
+  left: 7%;
+  width: 80%;
   text-align: center;
   color: #0500e8;
   font-family: "NeueHaasDisplay-Mediu";
@@ -270,7 +249,7 @@ footer .foot span:nth-of-type(2) {
 .section1 .bottom_txt p:nth-child(2) {
   font-size: 16px;
   font-family: "Noto Sans KR", sans-serif;
-  margin-left: 200px;
+  margin-left: 350px;
 }
 .section1 .bottom_txt p:nth-child(2) span {
   font-weight: 900;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,11 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="img/logo.png" id="rotate" alt="logo"></a></div>
-        <div class="menu"><a href="https://github.com/leuyrem"><button>Click to GitHub</button></a></div>
+        <div class="btn" onclick="window.open('https://github.com/leuyrem');"><p>Click to GitHub</p></div>
     </header>
 
 
-    <section class="container">
+    <div class="container">
         <div class="box1">
             <div class="participate">Personal Project - 참여도 100%</div>
             <a href="sub_tamburins.html">←&nbsp;Prev Page</a>
@@ -43,14 +44,15 @@
                 <span>●</span>교보문고의 상세페이지 레이아웃을 활용하여 입체적으로 구성<br>
                 <span>●</span>상세페이지 책이미지 부분 3D효과 구현
             </div>
-            <div class="document" onclick="window.open('https://drive.google.com/file/d/1toF3Hv4I590TxhOYYVjymBRnxkNMnQRB/view?usp=drive_link');" target="_blank">
+            <div class="document"
+                onclick="window.open('https://drive.google.com/file/d/1toF3Hv4I590TxhOYYVjymBRnxkNMnQRB/view?usp=drive_link');">
                 <span>●</span><br>GO TO THE<br>PPT<br>DOCUMENT
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="inner">
-        <section class="content">
+        <div class="content">
             <div class="detil">
                 <div class="main_scroll">
                     <video autoplay loop muted>
@@ -70,26 +72,23 @@
                     </div>
                     <button onclick="window.open('https://leuyrem.github.io/millie/');">View More</button>
                 </div>
-
-                <div class="subWrap">
-                    <div class="sub_scroll">
-
-                    </div>
-                    <div class="sub_mockup"></div>
-                </div>
-                <button class="next" onclick="location.href ='sub_team.html'">
-                    <p>Next Project</p>
-                </button><br>
+                <button class="next" onclick="location.href ='sub_team.html'"><span>Next Project</span></button><br>
             </div>
-        </section>
+        </div>
 
         <div class="sub_footer">
             <div class="wrap">
-                <div class="f_contact">
-                    <div><span>Contact</span></div>
-                    <div>
-                        <h1>✆ 010-5792-3804</h1>
-                        <h1>✉ leuyren@gmail.com</h1>
+                <div class="foot_board">
+                    <div class="f_contact">
+                        <div><span>Contact</span></div>
+                        <div>
+                            <h1>✆ 010-5792-3804</h1>
+                            <h1>✉ leuyren@gmail.com</h1>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                        <p>© 2024 LEEYURIM. All Rights Reserved.</p>
                     </div>
                 </div>
                 <div class="foot">

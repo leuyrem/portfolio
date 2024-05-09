@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,80 +24,82 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="img/logo.png" id="rotate" alt="logo"></a></div>
-        <div class="menu"><a href="https://github.com/leuyrem"><button>Click to GitHub</button></a></div>
+        <div class="btn" onclick="window.open('https://github.com/leuyrem');"><p>Click to GitHub</p></div>
     </header>
 
 
-    <section class="container">
+    <div class="container">
         <div class="box1">
             <div class="participate">Personal Project - 참여도 100%</div>
             <a href="sub_artmuseum.html">←&nbsp;Prev Page</a>
         </div>
         <div class="box2">
-            <div class="title">JACKSON <br><p>CHAMELEON<span>Html | CSS | jQuery</span></p></div>
+            <div class="title">JACKSON <br>
+                <p>CHAMELEON<span>Html | CSS | jQuery</span></p>
+            </div>
         </div>
         <div class="box3">
             <div class="about">
                 <span>●</span>Html, Css, jQuery를 활용한 웹페이지<br>
                 <span>●</span>메인, 메뉴, 상세페이지 제작<br>
             </div>
-            <div class="document" onclick="window.open('https://drive.google.com/file/d/19dmwi2Gx7aHi_ED2Nqc6FOMA2EHp89NO/view?usp=drive_link');" target="_blank">
+            <div class="document"
+                onclick="window.open('https://drive.google.com/file/d/19dmwi2Gx7aHi_ED2Nqc6FOMA2EHp89NO/view?usp=drive_link');">
                 <span>●</span><br>GO TO THE<br>PPT<br>DOCUMENT
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="inner">
-        <section class="content">
+        <div class="content">
             <div class="detil">
                 <div class="main_scroll">
                     <video autoplay loop muted>
-                        <source src="./video/jackson.mp4"
-                            type="video/mp4">
+                        <source src="./video/jackson.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="txt_group">
                     <div class="key">
                         <span>key-point</span><br>
-                       <p>
-                        #Html, Css의 기본적인 웹페이지 구조 이해<br>
-                        #jQuery를 활용한 이미지 변경 효과 구현<br>
-                        #Toggle을 이용하여 버튼 클릭 애니메이션 적용<br>
-                       </p> 
+                        <p>
+                            #Html, Css의 기본적인 웹페이지 구조 이해<br>
+                            #jQuery를 활용한 이미지 변경 효과 구현<br>
+                            #Toggle을 이용하여 버튼 클릭 애니메이션 적용<br>
+                        </p>
                     </div>
                     <button onclick="window.open('https://leuyrem.github.io/Jackson_Chameleon/');">View More</button>
-                </div> 
-
-                <div class="subWrap">
-                    <div class="sub_scroll">
-                       
-                    </div>
-                    <div class="sub_mockup"></div>                    
-                    </div>
-                <button class="next" onclick="location.href ='sub_tamburins.html'"><p>Next Project</p></button><br>
+                </div>
+                <button class="next" onclick="location.href ='sub_tamburins.html'"><span>Next
+                        Project</span></button><br>
             </div>
-        </section>
+        </div>
 
         <div class="sub_footer">
             <div class="wrap">
-                <div class="f_contact">
-                    <div><span>Contact</span></div>
-                    <div>
-                        <h1>✆ 010-5792-3804</h1>
-                        <h1>✉ leuyren@gmail.com</h1>
+                <div class="foot_board">
+                    <div class="f_contact">
+                        <div><span>Contact</span></div>
+                        <div>
+                            <h1>✆ 010-5792-3804</h1>
+                            <h1>✉ leuyren@gmail.com</h1>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                        <p>© 2024 LEEYURIM. All Rights Reserved.</p>
                     </div>
                 </div>
-            <div class="foot">
-                <p>Thanks</p>
-                <span>for</span>
-                <span>visiting!</span>
+                <div class="foot">
+                    <p>Thanks</p>
+                    <span>for</span>
+                    <span>visiting!</span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
-    <script src="js/sub.js"></script>    
+    <script src="js/sub.js"></script>
     <script src="js/index.js"></script>
 </body>
 
